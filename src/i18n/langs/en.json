@@ -1,0 +1,67 @@
+{
+    "navbar": {
+        "documentation": "Documentation",
+        "about": "About",
+        "repository": "Repository"
+    },
+    "overview" : {
+        "title": "API Overview",
+        "description" : "Access data about the Horizon universe through RESTful endpoints. Includes data from Horizon Zero Dawn, Horizon Forbidden West, The Frozen Wilds, and Burning Shores.",
+        "endpoints" : [
+            {
+                "title-endpoint" : "Characters",
+                "subtitle-endpoint" : "Access all characters from the Horizon universe.",
+                "description-endpoint" : "Get detailed information about each character, including their story, affiliations, and appearances in the games."
+            },
+            {
+                "title-endpoint" : "Machines",
+                "subtitle-endpoint" : "Over 50 documented machines.",
+                "description-endpoint" : "Explore each type of machine with data on its class, size, origin, and combat behavior."
+            },
+            {
+                "title-endpoint" : "Regions",
+                "subtitle-endpoint" : "Discover regions of the Horizon world.",
+                "description-endpoint" : "Check the location, environment, and areas belonging to each region."
+            },
+            {
+                "title-endpoint" : "Areas",
+                "subtitle-endpoint" : "Explorable zones and their connections.",
+                "description-endpoint" : "Get information about some areas and their relationship with regions or factions."
+            },
+            {
+                "title-endpoint" : "Cauldrons",
+                "subtitle-endpoint" : "Ancient production centers.",
+                "description-endpoint" : "Discover the cauldrons, their location, difficulty, and the machines that can be overridden."
+            },
+            {
+                "title-endpoint" : "AI Translation (Beta)",
+                "subtitle-endpoint" : "Automatic response translation with AI.",
+                "description-endpoint" : "Translate API responses into multiple languages with built-in artificial intelligence."
+            }
+        ]
+    },
+    "apidocs": {
+        "title": "API Documentation",
+        "description": "Comprehensive reference guide for the Horizon API. Access characters, machines, regions, areas, cauldrons, and AI-powered automatic translations.",
+        "options": [
+            "Home",
+            "Characters",
+            "Machines",
+            "Regions",
+            "Areas",
+            "Cauldrons",
+            "AI Translation (Beta)"
+        ]
+    },
+    "tabHome": {
+        "quickstart": "Quickstart Guide",
+        "quickstart-description": "You can get started using the API in minutes. No authentication of any kind is required.",
+        "base-url-title": "Base URL",
+        "endpoints-title": "Available Endpoints",
+        "endpoint-1-description": "The root endpoint provides an overview of all available endpoints in the API.",
+        "example-title": "Example:",
+        "example-1-description": "Get individual character:",
+        "example-2-description": "Get individual machine:",
+        "example-3-description": "Get individual cauldron:"
+    }
+}

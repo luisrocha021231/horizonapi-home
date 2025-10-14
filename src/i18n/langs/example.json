@@ -1,0 +1,112 @@
+{
+    "cauldrons": [
+        {
+            "id": 1,
+            "slug": "sigma",
+            "name": "Cauldron SIGMA",
+            "description": "Cauldron SIGMA is a HEPHAESTUS facility that manufactures machines for use in terraforming.",
+            "path_image": "/images/cauldrons/cauldron-sigma.png",
+            "map_location_image": "/images/map-location/sigma-location.png",
+            "region": "Valleymeet",
+            "overridden_machines": [
+                "Grazer",
+                "Lancehorn",
+                "Sawtooth",
+                "Scrapper"
+            ],
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "rho",
+            "name": "Caudron RHO",
+            "description": "Cauldron RHO is a HEPHAESTUS facility that manufactures machines for use in terraforming. The only known machine that RHO produces are Snapmaws.",
+            "path_image": "/images/cauldrons/cauldron-rho.png",
+            "map_location_image": "/images/map-location/rho-location.png",
+            "region": "Gatelands",
+            "overridden_machines": [],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "xi",
+            "name": "Cauldron XI",
+            "description": "Cauldron XI is an activity in Horizon Zero Dawn. It was a HEPHAESTUS facility that manufactured machines for use in terraforming before collapsing.",
+            "path_image": "/images/cauldrons/cauldron-xi.png",
+            "map_location_image": "/images/map-location/xi-location.png",
+            "region": "The Jewel",
+            "overridden_machines": [
+                "Behemoth",
+                "Bellowback",
+                "Fire Bellowback",
+                "Freeze Bellowback",
+                "Glinthawk",
+                "Stalker"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "zeta",
+            "name": "Cauldron ZETA",
+            "description": "Cauldron ZETA is an activity in Horizon Zero Dawn. It is a HEPHAESTUS facility that manufactures machines for use in terraforming. The only known machine that ZETA produces are Thunderjaws.",
+            "path_image": "/images/cauldrons/cauldron-zeta.png",
+            "map_location_image": "/images/map-location/zeta-location.png",
+            "region": "Sun Furrows",
+            "overridden_machines": [
+                "Rockbreaker",
+                "Stormbird",
+                "Thunderjaw"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 5,
+            "slug": "epsilon",
+            "name": "Cauldron EPSILON",
+            "description": "Cauldron EPSILON was a location in Horizon Zero Dawn: The Frozen Wilds, located within the 21st century facility known as Firebreak.",
+            "path_image": "/images/cauldrons/cauldron-epsilon.png",
+            "map_location_image": "/images/map-location/epsilon-location.png",
+            "region": "Burning Shores",
+            "overridden_machines": [
+                "Fireclaw",
+                "Frostclaw",
+                "Scorcher"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West: Burning Shores"
+            ]
+        },
+        {
+            "id": 8,
+            "slug": "gemini",
+            "name": "Cauldron GEMINI",
+            "description": "Cauldron GEMINI is a Cauldron in Horizon Forbidden West.",
+            "path_image": "/images/cauldrons/cauldron-gemini.png",
+            "map_location_image": "/images/map-location/gemini-location.png",
+            "region": "Shining Wastes",
+            "overridden_machines": [
+                "Sunwing",
+                "Waterwing"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West"
+            ]
+        }
+    ]
+}

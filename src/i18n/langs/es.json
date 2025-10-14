@@ -1,0 +1,67 @@
+{
+    "navbar": {
+        "documentation": "Documentación",
+        "about": "Acerca",
+        "repository": "Repositorio"
+    },
+    "overview": {
+        "title": "Resumen de la API",
+        "description" : "Accede a los datos sobre el universo de Horizon a través de los endpoints RESTful. Incluye datos de Horizon Zero Dawn, Horizon Forbidden West, The Frozen Wilds y Burning Shores.",
+        "endpoints" : [
+            {
+                "title-endpoint" : "Personajes",
+                "subtitle-endpoint" : "Accede a todos los personajes del universo Horizon.",
+                "description-endpoint" : "Obtén información detallada de cada personaje, incluyendo su historia, afiliaciones y apariciones en los juegos."
+            },
+            {
+                "title-endpoint" : "Máquinas",
+                "subtitle-endpoint" : "Más de 50 máquinas documentadas.",
+                "description-endpoint" : "Explora cada tipo de máquina con datos sobre su clase, tamaño, origen y comportamiento en combate."
+            },
+            {
+                "title-endpoint" : "Regiones",
+                "subtitle-endpoint" : "Descubre regiones del mundo Horizon.",
+                "description-endpoint" : "Consulta la ubicación, entorno y las áreas que pertenecen a cada región."
+            },
+            {
+                "title-endpoint" : "Áreas",
+                "subtitle-endpoint" : "Zonas explorables y sus conexiones.",
+                "description-endpoint" : "Obtén información sobre algunas áreas y su relación con regiones o facciones."
+            },
+            {
+                "title-endpoint" : "Calderos",
+                "subtitle-endpoint" : "Centros de producción antiguos.",
+                "description-endpoint" : "Descubre los calderos, su ubicación, dificultad y las máquinas que se pueden dominar."
+            },
+            {
+                "title-endpoint" : "Traducción IA (Beta)",
+                "subtitle-endpoint" : "Traducción automática de respuestas con IA.",
+                "description-endpoint" : "Traduce las respuestas de la API a varios idiomas con inteligencia artificial integrada."
+            }
+        ]
+    },
+    "apidocs": {
+        "title": "Documentación de la API",
+        "description": "Guía completa de referencia para la Horizon API. Accede a personajes, máquinas, regiones, áreas, calderos y traducciones automáticas impulsadas por IA.",
+        "options": [
+            "Inicio",
+            "Personajes",
+            "Máquinas",
+            "Regiones",
+            "Áreas",
+            "Calderos",
+            "Traducción IA (Beta)"
+        ]
+    },
+    "tabHome": {
+        "quickstart": "Guía Rápida",
+        "quickstart-description": "Se puede comenzar a usar la API en minutos. No se requiere autenticación de ningún tipo.",
+        "base-url-title": "URL Base",
+        "endpoints-title": "Endpoints Disponibles",
+        "endpoint-1-description": "El endpoint raíz proporciona una visión general de todos los endpoints disponibles en la API.",
+        "example-title": "Ejemplo:",
+        "example-1-description": "Consulta individual de un personaje:",
+        "example-2-description": "Consulta individual de una máquina:",
+        "example-3-description": "Consulta individual de un caldero:"
+    }
+}

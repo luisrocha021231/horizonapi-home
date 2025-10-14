@@ -1,0 +1,7 @@
+{
+  "characters": "https://horizonapi.luisrocharo.com/api/characters",
+  "machines": "https://horizonapi.luisrocharo.com/api/machines",
+  "cauldrons": "https://horizonapi.luisrocharo.com/api/cauldrons",
+  "regions": "https://horizonapi.luisrocharo.com/api/regions",
+  "areas": "https://horizonapi.luisrocharo.com/api/areas"
+}

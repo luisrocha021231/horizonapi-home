@@ -1,0 +1,123 @@
+{
+    "characters": [
+        {
+            "id": 4,
+            "slug": "aloy",
+            "name": "Aloy",
+            "image_path": "/Aloy.webp",
+            "culture": "Nora",
+            "gender": "Female",
+            "profession": "Machine hunter",
+            "status": "Alive",
+            "eyesColor": "Green",
+            "hairColor": "Red",
+            "birth_date": "April 4th, 3021",
+            "death_date": "No data",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn: The Frozen Wilds",
+                "Horizon Forbidden West",
+                "Horizon Forbidden West: Burning Shores",
+                "Horizon Call of the Mountain",
+                "LEGO Horizon Adventures",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 471,
+            "slug": "rost",
+            "name": "Rost",
+            "image_path": "/Rost.webp",
+            "culture": "Nora",
+            "gender": "Male",
+            "profession": "No data",
+            "status": "Deceased",
+            "eyesColor": "Gray",
+            "hairColor": "Brown",
+            "birth_date": "No data",
+            "death_date": "3039",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 503,
+            "slug": "elisabet-sobeck",
+            "name": "Elisabet Sobeck",
+            "image_path": "/Elisabet_Sobeck.webp",
+            "culture": "Old Ones (American)",
+            "gender": "Female",
+            "profession": "Engineer Roboticist Scientist",
+            "status": "Deceased",
+            "eyesColor": "Green",
+            "hairColor": "Red",
+            "birth_date": "March 11, 2020",
+            "death_date": "January 2066",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 127,
+            "slug": "sylens",
+            "name": "Sylens",
+            "image_path": "/Sylens.webp",
+            "culture": "Banuk (disputed)",
+            "gender": "Male",
+            "profession": "No data",
+            "status": "Alive",
+            "eyesColor": "Brown",
+            "hairColor": "No data",
+            "birth_date": "No data",
+            "death_date": "No data",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn: The Frozen Wilds",
+                "Horizon Forbidden West",
+                "Horizon Forbidden West: Burning Shores",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 213,
+            "slug": "beta",
+            "name": "Beta",
+            "image_path": "/Beta.webp",
+            "culture": "No data",
+            "gender": "Female",
+            "profession": "No data",
+            "status": "Alive",
+            "eyesColor": "Green",
+            "hairColor": "Red",
+            "birth_date": "Sometime after January 16, 3012",
+            "death_date": "No data",
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Forbidden West: Burning Shores"
+            ]
+        },
+        {
+            "id": 133,
+            "slug": "ted-faro",
+            "name": "Ted Faro",
+            "image_path": "Ted_Faro.webp",
+            "culture": "Old Ones (American)",
+            "gender": "Male",
+            "profession": "No data",
+            "status": "Deceased",
+            "eyesColor": "Brown",
+            "hairColor": "Brown",
+            "birth_date": "December 24, 2013 Salt Lake",
+            "death_date": "3041",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn Remastered"
+            ]
+        }
+    ]
+}

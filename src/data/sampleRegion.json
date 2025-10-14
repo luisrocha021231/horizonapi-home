@@ -1,0 +1,16 @@
+{
+    "id": 4,
+    "slug": "sun-steps",
+    "name": "Sun-Steps",
+    "description": "The Sun-Steps are the northeasternmost region of the Carja Sundom in Horizon Zero Dawn.",
+    "image_path": "/images/regions/sun-steps.png",
+    "factions": [
+        "Carja"
+    ],
+    "area": "Sundom",
+    "appears_in": [
+        "Horizon Forbidden West",
+        "Horizon Zero Dawn",
+        "Horizon Zero Dawn Remastered"
+    ]
+}

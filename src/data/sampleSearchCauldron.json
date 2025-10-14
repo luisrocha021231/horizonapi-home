@@ -1,0 +1,49 @@
+{
+    "cauldrons": [
+        {
+            "id": 4,
+            "slug": "zeta",
+            "name": "Cauldron ZETA",
+            "description": "Cauldron ZETA is an activity in Horizon Zero Dawn. It is a HEPHAESTUS facility that manufactures machines for use in terraforming. The only known machine that ZETA produces are Thunderjaws.",
+            "path_image": "/images/cauldrons/cauldron-zeta.png",
+            "map_location_image": "/images/map-location/zeta-location.png",
+            "region": "Sun Furrows",
+            "overridden_machines": [
+                "Rockbreaker",
+                "Stormbird",
+                "Thunderjaw"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 10,
+            "slug": "iota",
+            "name": "Cauldron IOTA",
+            "description": "Cauldron IOTA is a Cauldron activity in Horizon Forbidden West.",
+            "path_image": "/images/cauldrons/cauldron-iota.png",
+            "map_location_image": "/images/map-location/iota-location.png",
+            "region": "Salt Bite",
+            "overridden_machines": [
+                "Bellowback",
+                "Clawstrider",
+                "Fire Bellowback",
+                "Freeze Bellowback",
+                "Glinthawk",
+                "Lancehorn",
+                "Leaplasher",
+                "Longleg",
+                "Ravager",
+                "Rollerback",
+                "Skydrifter",
+                "Snapmaw"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West"
+            ]
+        }
+    ]
+}

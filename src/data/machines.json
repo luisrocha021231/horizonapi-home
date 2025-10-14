@@ -1,0 +1,190 @@
+{
+    "machines": [
+        {
+            "id": 48,
+            "slug": "tallneck",
+            "name": "Tallneck",
+            "path_image": "TallNeck.webp",
+            "size": "Large",
+            "origin": "GAIA",
+            "machine_class": "Communications (HDZ)",
+            "strength": [
+                "All"
+            ],
+            "weakness": [
+                "No data"
+            ],
+            "explosive_components": [
+                "No data"
+            ],
+            "weak_points": [
+                "No data"
+            ],
+            "appears_in": [
+                "Horizon Call of the Mountain",
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered",
+                "Horizon Zero Dawn: The Frozen Wilds"
+            ]
+        },
+        {
+            "id": 53,
+            "slug": "horus",
+            "name": "Horus",
+            "path_image": "Horus.webp",
+            "size": "Titan",
+            "origin": "Faro Automated Solutions",
+            "machine_class": "Chariot",
+            "strength": [
+                "All"
+            ],
+            "weakness": [
+                "No data"
+            ],
+            "explosive_components": [
+                "No data"
+            ],
+            "weak_points": [
+                "No data"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 26,
+            "slug": "sawtooth",
+            "name": "Sawtooth",
+            "path_image": "Sawtooth.webp",
+            "size": "Medium",
+            "origin": "HEPHAESTUS",
+            "machine_class": "Combat",
+            "strength": [
+                "No data"
+            ],
+            "weakness": [
+                "Fire"
+            ],
+            "explosive_components": [
+                "No data"
+            ],
+            "weak_points": [
+                "Blaze Canister",
+                "Eyes (snout)"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 46,
+            "slug": "deathbringer",
+            "name": "Deathbringer",
+            "path_image": "Deathbringer.webp",
+            "size": "Large",
+            "origin": "Faro Automated Solutions",
+            "machine_class": "Chariot",
+            "strength": [
+                "Corruption"
+            ],
+            "weakness": [
+                "Shock"
+            ],
+            "explosive_components": [
+                "No data"
+            ],
+            "weak_points": [
+                "Cooling Rod",
+                "Core",
+                "Eyes",
+                "Flamethrower",
+                "Grenade Launcher",
+                "Gun Turret",
+                "Heat Vent",
+                "Heavy Cannon Turret",
+                "Repeater Cannon Turret",
+                "Stabilizer",
+                "Swarm Launcher"
+            ],
+            "appears_in": [
+                "Horizon Call of the Mountain",
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 43,
+            "slug": "slitherfang",
+            "name": "Slitherfang",
+            "path_image": "Slitherfang.webp",
+            "size": "No data",
+            "origin": "HEPHAESTUS",
+            "machine_class": "Combat",
+            "strength": [
+                "Purgewater",
+                "Shock"
+            ],
+            "weakness": [
+                "Frost",
+                "Plasma"
+            ],
+            "explosive_components": [
+                "Metalbite Sac",
+                "Purgewater Sac"
+            ],
+            "weak_points": [
+                "Acid Canister (x3)",
+                "Data Nexus",
+                "Earthgrinder",
+                "Eyes",
+                "Glowblast Canister (x2)",
+                "Purgewater Canister (x3)",
+                "Resource Container (x9)",
+                "Shock Orb",
+                "Sonic Hood",
+                "Sparker (x2)"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 20,
+            "slug": "corruptor",
+            "name": "Corruptor",
+            "path_image": "Corruptor.webp",
+            "size": "Medium",
+            "origin": "Faro Automated Solutions",
+            "machine_class": "Chariot",
+            "strength": [
+                "Berserk (HFW)"
+            ],
+            "weakness": [
+                "Fire"
+            ],
+            "explosive_components": [
+                "No data"
+            ],
+            "weak_points": [
+                "Eyes",
+                "Grenade Launcher",
+                "Heat Core",
+                "Spike Launcher"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Forbidden West: Burning Shores",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        }
+    ]
+}

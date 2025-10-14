@@ -1,0 +1,60 @@
+{
+    "examples": [
+        {
+            "id": 4,
+            "slug": "aloy",
+            "name": "Aloy",
+            "image_path": "/images/characters/aloy.png",
+            "culture": "Nora",
+            "gender": "Женский",
+            "profession": "Охотница на машин",
+            "status": "Жива",
+            "eyesColor": "Зелёные",
+            "hairColor": "Рыжие",
+            "birth_date": "4 апреля 3021 года",
+            "death_date": "Нет данных",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn: The Frozen Wilds",
+                "Horizon Forbidden West",
+                "Horizon Forbidden West: Burning Shores",
+                "Horizon Call of the Mountain",
+                "LEGO Horizon Adventures",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "sun-steps",
+            "name": "Sun-Steps",
+            "description": "Sun-Steps es la región más nororiental del Carja Sundom en Horizon Zero Dawn.",
+            "image_path": "/images/regions/sun-steps.png",
+            "factions": [
+                "Carja"
+            ],
+            "area": "Sundom",
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 6,
+            "slug": "sundom",
+            "name": "Sundom",
+            "description": "Sundon (Sun と Kingdom を組み合わせた混成語）は Carja 族の領土であり、『Horizon Zero Dawn』および『Horizon Forbidden West』に登場する。",
+            "type": "部族領",
+            "faction": "Carja",
+            "image_path": "/images/areas/sundom.png",
+            "regions": [
+                "The Embrace"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        }
+    ]
+}

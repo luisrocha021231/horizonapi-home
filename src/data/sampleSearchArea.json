@@ -1,0 +1,35 @@
+{
+    "areas": [
+        {
+            "id": 1,
+            "slug": "ban-ur",
+            "name": "Ban Ur",
+            "description": "Ban-Ur is the tribal homeland of the nomadic Banuk tribe.",
+            "type": "Tribal Territory",
+            "faction": "Banuk",
+            "image_path": "/images/areas/ban-ur.png",
+            "regions": [
+                "Gatelands"
+            ],
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "clan-lands",
+            "name": "Clan Lands",
+            "description": "The Clan Lands, also known as the Tenakth Lands, is the territory belonging to the Tenakth tribe within the Forbidden West. The Clan Lands make up the majority of the Forbidden West.",
+            "type": "Tribal Territory",
+            "faction": "Tenakth",
+            "image_path": "/images/areas/clan-lands.png",
+            "regions": [
+                "Rustwash"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West"
+            ]
+        }
+    ]
+}

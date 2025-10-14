@@ -1,0 +1,15 @@
+{
+    "id": 4,
+    "slug": "plainsong",
+    "name": "Plainsong",
+    "description": "Plainsong is the home territory of the Utaru tribe.",
+    "type": "Tribal Territory",
+    "faction": "Utaru",
+    "image_path": "/images/areas/plainsong.png",
+    "regions": [
+        "Sun-Steps"
+    ],
+    "appears_in": [
+        "Horizon Forbidden West"
+    ]
+}

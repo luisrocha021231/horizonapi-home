@@ -1,0 +1,23 @@
+{
+  "id": 4,
+  "slug": "aloy",
+  "name": "Aloy",
+  "image_path": "/images/characters/aloy.png",
+  "culture": "Nora",
+  "gender": "Female",
+  "profession": "Machine hunter",
+  "status": "Alive",
+  "eyesColor": "Green",
+  "hairColor": "Red",
+  "birth_date": "April 4th, 3021",
+  "death_date": "No data",
+  "appears_in": [
+    "Horizon Zero Dawn",
+    "Horizon Zero Dawn: The Frozen Wilds",
+    "Horizon Forbidden West",
+    "Horizon Forbidden West: Burning Shores",
+    "Horizon Call of the Mountain",
+    "LEGO Horizon Adventures",
+    "Horizon Zero Dawn Remastered"
+  ]
+}

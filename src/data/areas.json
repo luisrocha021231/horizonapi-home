@@ -1,0 +1,100 @@
+{
+    "areas" : [
+        {
+            "id": 5,
+            "slug": "sacred-lands",
+            "name": "Sacred Lands",
+            "description": "The Sacred Lands, also known as Nora Territory or the Savage East, is the territory belonging to the people of the Nora tribe.",
+            "type": "Tribal Territory",
+            "faction": "Nora",
+            "image_path": "/sacred-lands.webp",
+            "regions": [
+                "The Cut"
+            ],
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 1,
+            "slug": "ban-ur",
+            "name": "Ban Ur",
+            "description": "Ban-Ur is the tribal homeland of the nomadic Banuk tribe.",
+            "type": "Tribal Territory",
+            "faction": "Banuk",
+            "image_path": "/ban-ur.webp",
+            "regions": [
+                "Gatelands"
+            ],
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "clan-lands",
+            "name": "Clan Lands",
+            "description": "The Clan Lands, also known as the Tenakth Lands, is the territory belonging to the Tenakth tribe within the Forbidden West. The Clan Lands make up the majority of the Forbidden West.",
+            "type": "Tribal Territory",
+            "faction": "Tenakth",
+            "image_path": "/clan-lands.webp",
+            "regions": [
+                "Rustwash"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West"
+            ]
+        },
+        {
+            "id": 6,
+            "slug": "sundom",
+            "name": "Sundom",
+            "description": "The Sundom (portmanteau of Sun and Kingdom) is the territory of the Carja tribe, featured in Horizon Zero Dawn and Horizon Forbidden West.",
+            "type": "Tribal Territory",
+            "faction": "Carja",
+            "image_path": "/sundom.webp",
+            "regions": [
+                "The Embrace"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 7,
+            "slug": "the-claim",
+            "name": "The Claim",
+            "description": "The Claim is a mentioned-only location in Horizon Zero Dawn and Horizon Forbidden West. It is the tribal territory of the Oseram.",
+            "type": "Tribal Territory",
+            "faction": "Oseram",
+            "image_path": "/the-claim.webp",
+            "regions": [
+                "The Jewel"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 9,
+            "slug": "burning-shores",
+            "name": "Burning Shores",
+            "description": "The Burning Shores are the playable location of Horizon Forbidden West: Burning Shores. The Burning Shores were mentioned in datapoints in Horizon Forbidden West.",
+            "type": "Primary Location",
+            "faction": "None",
+            "image_path": "/burning-shores.webp",
+            "regions": [
+                "Valleymeet"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West: Burning Shores"
+            ]
+        }
+    ]
+}

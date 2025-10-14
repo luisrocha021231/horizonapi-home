@@ -1,0 +1,47 @@
+{
+    "characters": [
+        {
+            "id": 423,
+            "slug": "walter-londra",
+            "name": "Walter Londra",
+            "image_path": "/images/characters/walter-londra.png",
+            "culture": "Old Ones",
+            "gender": "Male",
+            "profession": "No data",
+            "status": "Deceased",
+            "eyesColor": "Brown",
+            "hairColor": "Grey",
+            "birth_date": "No data",
+            "death_date": "3041 Burning Shores",
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Forbidden West: Burning Shores"
+            ]
+        },
+        {
+            "id": 496,
+            "slug": "catalina-garcia-fernandez",
+            "name": "Catalina Garcia Fernandez",
+            "image_path": "/images/characters/catalina-garcia-fernandez.png",
+            "culture": "Old Ones",
+            "gender": "No data",
+            "profession": "No data",
+            "status": "Deceased",
+            "eyesColor": "No data",
+            "hairColor": "No data",
+            "birth_date": "Sometime before 2036",
+            "death_date": "February 2, 2066",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        }
+    ],
+    "pagination": {
+        "previousPage": "/api/characters?search=al&page=0",
+        "nextPage": null,
+        "totalPages": 2,
+        "pageSize": 25,
+        "currentPage": 1
+    }
+}

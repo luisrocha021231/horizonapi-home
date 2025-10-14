@@ -1,0 +1,38 @@
+{
+    "pagination": {
+        "previousPage": "/api/machines?search=t&page=0",
+        "nextPage": null,
+        "totalPages": 2,
+        "pageSize": 27,
+        "currentPage": 1
+    },
+    "machines": [
+        {
+            "id": 54,
+            "slug": "control-tower",
+            "name": "Control Tower",
+            "path_image": "control-tower.png",
+            "size": "No data",
+            "origin": "HEPHAESTUS",
+            "machine_class": "No data",
+            "strength": [
+                "All"
+            ],
+            "weakness": [
+                "No data"
+            ],
+            "explosive_components": [
+                "Cooling Element"
+            ],
+            "weak_points": [
+                "Cooling Element"
+            ],
+            "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered",
+                "Horizon Zero Dawn: The Frozen Wilds"
+            ]
+        }
+    ]
+}

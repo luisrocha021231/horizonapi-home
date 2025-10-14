@@ -1,0 +1,33 @@
+{
+    "regions": [
+        {
+            "id": 6,
+            "slug": "the-embrace",
+            "name": "The Embrace",
+            "description": "The Embrace, sometimes called All-Mother's Embrace, is a small valley region in the southwestern part of the Nora Sacred Lands in Horizon Zero Dawn.",
+            "image_path": "/images/regions/the-embrace.png",
+            "factions": [
+                "Nora"
+            ],
+            "area": "Sacred Lands",
+            "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+            ]
+        },
+        {
+            "id": 11,
+            "slug": "burning-shores",
+            "name": "Burning Shores",
+            "description": "The Burning Shores are the playable location of Horizon Forbidden West: Burning Shores. The Burning Shores were mentioned in datapoints in Horizon Forbidden West.",
+            "image_path": "/images/regions/burning-shores.png",
+            "factions": [
+                "None"
+            ],
+            "area": "Burning Shores",
+            "appears_in": [
+                "Horizon Forbidden West: Burning Shores"
+            ]
+        }
+    ]
+}

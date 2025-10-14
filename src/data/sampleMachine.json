@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "slug": "leaplasher",
+  "name": "Leaplasher",
+  "path_image": "leaplasher.png",
+  "size": "No data",
+  "origin": "No data",
+  "machine_class": "Transport",
+  "strength": [
+    "Shock"
+  ],
+  "weakness": [
+    "Purgewater"
+  ],
+  "explosive_components": [
+    "No data"
+  ],
+  "weak_points": [
+    "Cargo Claw",
+    "Elemental Canister",
+    "Eye",
+    "Power Cell"
+  ],
+  "appears_in": [
+    "Horizon Forbidden West",
+    "Horizon Zero Dawn",
+    "Horizon Zero Dawn Remastered"
+  ]
+}

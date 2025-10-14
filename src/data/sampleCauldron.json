@@ -1,0 +1,19 @@
+{
+    "id": 4,
+    "slug": "zeta",
+    "name": "Cauldron ZETA",
+    "description": "Cauldron ZETA is an activity in Horizon Zero Dawn. It is a HEPHAESTUS facility that manufactures machines for use in terraforming. The only known machine that ZETA produces are Thunderjaws.",
+    "path_image": "/images/cauldrons/cauldron-zeta.png",
+    "map_location_image": "/images/map-location/zeta-location.png",
+    "region": "Sun Furrows",
+    "overridden_machines": [
+        "Rockbreaker",
+        "Stormbird",
+        "Thunderjaw"
+    ],
+    "appears_in": [
+        "Horizon Forbidden West",
+        "Horizon Zero Dawn",
+        "Horizon Zero Dawn Remastered"
+    ]
+}
