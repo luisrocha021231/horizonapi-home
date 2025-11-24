@@ -63,5 +63,95 @@
         "example-1-description": "Consulta individual de un personaje:",
         "example-2-description": "Consulta individual de una máquina:",
         "example-3-description": "Consulta individual de un caldero:"
+    },
+    "tabCharacters": {
+        "title": "Personajes",
+        "description": "Obtén información completa de los personajes del universo Horizon: nombre, cultura, estado y los juegos en los que aparecen. estado y los juegos en los que aparecen.",
+        "main-endpoint": "Endpoint Principal",
+        "main-endpoint-description": "Devuelve el listado completo de personajes registrados en la API. Acepta 3 parámetros los cuales son opcionales (page, size y search).",
+        "available-parameters": "Parámetros Disponibles",
+        "parameter-page": "Número de página. Valor por defecto: 0.",
+        "parameter-size": "Cantidad de registros por página. Valor por defecto: 25. Se puede personalizar el tamaño de la pagina. Valor mínimo: 25 y máximo: 50.",
+        "parameter-search": "Obtiene el filtrado de personajes cuyo nombre contenga el texto especificado en la búsqueda parcial, sin distinción de mayúsculas/minúsculas.",
+        "issue-request": "Los tres parámetros son opcionales y pueden combinarse de forma libre. Solo basta incluir uno para activar la paginación. Si no se especifica ninguno, se devuelve la lista completa de personajes.",
+        "parameter-note" : "Nota: si se utiliza el parámetro search y el número de resultados es menor a 25, la respuesta paginada devolverá valores null en los campos previousPage y nextPage. Indicando que no hay más páginas disponibles para navegar.",
+        "individual-request-title" : "Consulta Individual de Personaje:",
+        "individual-request-description" : "Obtén los detalles completos de un personaje específico utilizando su ID.",
+        "pagination-request-title" : "Ejemplo de consulta con paginación:",
+        "pagination-request-description" : "Ejemplo de uso combinando los parámetros page, size y search para filtrar resultados.",
+        "response-example-title" : "Personajes más populares"
+    },
+    "tabMachines" : {
+        "title": "Máquinas",
+        "description": "Consulta las máquinas del universo Horizon: nombre, clase, tamaño, origen, y en qué juegos aparecen.",
+        "main-endpoint": "Endpoint Principal",
+        "main-endpoint-description": "Devuelve la lista completa de máquinas disponibles en la API. Acepta 3 parámetros opcionales: page, size y search.",
+        "available-parameters": "Parámetros Disponibles",
+        "parameter-page": "Número de página. Valor por defecto: 0.",
+        "parameter-size": "Cantidad de registros por página. Valor por defecto: 25. Se puede personalizar el tamaño de la pagina. Valor mínimo: 25 y máximo: 50.",
+        "parameter-search": "Obtiene el filtrado de personajes cuyo nombre contenga el texto especificado en la búsqueda parcial, sin distinción de mayúsculas/minúsculas.",
+        "issue-request": "Los tres parámetros son opcionales y pueden combinarse de forma libre. Solo basta incluir uno para activar la paginación. Si no se especifica ninguno, se devuelve la lista completa de personajes.",
+        "parameter-note" : "Nota: si se utiliza el parámetro search y el número de resultados es menor a 25, la respuesta paginada devolverá valores null en los campos previousPage y nextPage. Indicando que no hay más páginas disponibles para navegar.",
+        "individual-request-title" : "Consulta Individual de Máquina:",
+        "individual-request-description" : "Permite obtener la información de una máquina específica mediante su ID.",
+        "pagination-request-title" : "Ejemplo de consulta con paginación:",
+        "pagination-request-description" : "Ejemplo de uso combinando los parámetros page, size y search para filtrar resultados.",
+        "response-example-title": "Máquinas más populares"
+    },
+    "tabRegions" : {
+        "title": "Regiones",
+        "description": "Descubre las regiones del universo de Horizon: zonas donde se desarrollan los eventos principales, con su ambientación, biomas y áreas asociadas.",
+        "main-endpoint": "Endpoint Principal",
+        "main-endpoint-description": "Devuelve la lista completa de regiones registradas en la API. Este endpoint no posee paginación.",
+        "individual-request-title" : "Consulta Individual de Región:",
+        "individual-request-description" : "Permite obtener los datos de una región específica mediante su ID.",
+        "search-request-title" : "Ejemplo de consulta mediante búsqueda:",
+        "search-request-description" : "Permite realizar búsquedas de regiones utilizando el parámetro search, que filtra por coincidencias parciales en el nombre (sin distinción de mayúsculas/minúsculas).",
+        "response-example-title": "Regiones más representativas"
+
+    },
+    "tabAreas" : {
+        "title": "Áreas",
+        "description": "Explora áreas presentes en el universo Horizon: regiones, zonas geográficas y ubicaciones relacionadas con facciones, personajes o máquinas.",
+        "main-endpoint": "Endpoint Principal",
+        "main-endpoint-description": "Devuelve la lista completa de áreas registradas en la API. Este endpoint no posee paginación.",
+        "individual-request-title" : "Consulta Individual de Área:",
+        "individual-request-description" : "Permite obtener la información completa de un área específica mediante su ID.",
+        "search-request-title" : "Ejemplo de consulta mediante búsqueda:",
+        "search-request-description" : "Permite realizar búsquedas de áreas utilizando el parámetro search, que filtra por coincidencias parciales en el nombre (sin distinción de mayúsculas/minúsculas).",
+        "response-example-title": "Áreas más representativas"
+    },
+    "tabCauldrons": {
+        "title": "Calderos",
+        "description": "Descubre los calderos del mundo de Horizon: instalaciones subterráneas antiguas donde se fabricaban las máquinas. Cada caldero presenta diferentes niveles de dificultad y tipos de máquinas que pueden ser dominadas.",
+        "main-endpoint": "Endpoint Principal",
+        "main-endpoint-description": "Devuelve la lista completa de calderos registrados en la API. Este endpoint no posee paginación.",
+        "individual-request-title" : "Consulta individual:",
+        "individual-request-description" : "Permite obtener la información detallada de un caldero específico mediante su ID.",
+        "search-request-title" : "Consulta mediante búsqueda:",
+        "search-request-description" : "Permite realizar búsquedas de calderos utilizando el parámetro search, que filtra por coincidencias parciales en el nombre (sin distinción de mayúsculas/minúsculas).",
+        "response-example-title": "Calderos más destacados"
+    },
+    "tabTranslation": {
+        "title": "Traducción con IA",
+        "description": "Los datos fueron recuperados y almacenados a partir de la información del sitio Horizon Wiki en su idioma original, por lo tanto todas las respuestas se generan en inglés. El módulo de traducción automática se implemento para facilitar respuestas en otros idiomas de forma nativa, sin embargo está actualmente en fase de desarrollo y pruebas. Esta opción permite traducir cualquier endpoint de la API de Horizon utilizando GPT-5.",
+        "experimental-title": "Modo experimental:",
+        "experimental-note": "Si la respuesta tarda más de 30 segundos, la petición se cancela automáticamente para evitar bloqueos del servidor.",
+        "parameter-lang-title": "Parámetro lang",
+        "parameter-lang-description": "Para obtener resultados traducidos, añade el parámetro ?lang= al final de cualquier endpoint, indicando el idioma deseado (por ejemplo: es, ru, jp, fr etc.).",
+        "general-example-description": "Ejemplo general: /api/areas?lang=es devolverá la información traducida al español. Este parámetro se aplica a todos los endpoints disponibles.",
+        "example-title": "Ejemplos de endpoints traducidos:",
+        "example-2-title": "Ejemplos de respuestas traducidas:",
+        "example-2-description": "A continuación se muestran ejemplos de respuestas traducidas generadas por el modelo GPT-5.",
+        "warning-note": "⚠️ Esta opción de traducción aún se encuentra en desarrollo. Los resultados pueden variar dependiendo de la complejidad de la solicitud y del idioma solicitado."
+    },
+    "footer": {
+        "docs-title": "Documentación",
+        "API-title": "API Endpoint",
+        "example-title": "Ejemplo",
+        "about-content-1": "Construido por",
+        "about-content-2": ". Inspirado en APIs abiertas y documentaciones modernas.",
+        "about-content-3": "Este proyecto utiliza datos de",
+        "about-content-4": ". Datos y contenido bajo licencia"
     }
 }

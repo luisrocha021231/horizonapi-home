@@ -3,8 +3,10 @@ import { Users, Copy, ExternalLink } from "lucide-react";
 import charactersData from "../../data/characters.json";
 import sampleCharacter from "../../data/sampleCharacter.json";
 import samplePagination from "../../data/samplePagination.json";
+import { useTranslation } from "react-i18next";
 
 export default function TabCharacters() {
+  const { t } = useTranslation(); 
   const endpoint = "https://horizonapi.luisrocharo.com/api/characters";
   const [characters, setCharacters] = useState([]);
 
@@ -28,23 +30,19 @@ export default function TabCharacters() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Users className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Personajes</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabCharacters.title")}</h3>
         </div>
 
         <p className="text-gray-200/90 mb-6 text-sm sm:text-base leading-relaxed">
-          Obtén información completa de los personajes del universo{" "}
-          <strong className="text-white">Horizon</strong>: nombre, cultura,
-          estado y los juegos en los que aparecen.
+          {t("tabCharacters.description")}
         </p>
       </section>
 
       {/* SECCIÓN 2 - ENDPOINT PRINCIPAL */}
       <section>
-        <h4 className="font-semibold text-gray-100 mb-2">Endpoint principal:</h4>
+        <h4 className="font-semibold text-gray-100 mb-2">{t("tabCharacters.main-endpoint")}</h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Devuelve el listado completo de personajes registrados en la API.
-          Acepta 3 parámetros los cuales son opcionales (<code>page</code>,{" "}
-          <code>size</code> y <code>search</code>).
+          {t("tabCharacters.main-endpoint-description")}
         </p>
 
         {/* Badge + Endpoint + Botones */}
@@ -79,34 +77,27 @@ export default function TabCharacters() {
         {/* Documentación de Query Params */}
         <div className="bg-white/5 border border-white/20 rounded-2xl p-5 mt-4 backdrop-blur-lg shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
           <h5 className="font-semibold text-white mb-2 text-lg">
-            Parámetros disponibles:
+            {t("tabCharacters.available-parameters")}
           </h5>
 
           <ul className="text-sm text-gray-300 leading-relaxed list-disc list-inside space-y-1 text-justify pl-5">
             <li>
-              <strong>page</strong> — Número de página. Valor por defecto: <code>0</code>.
+              <strong>page</strong> — {t("tabCharacters.parameter-page")}
             </li>
             <li>
-              <strong>size</strong> — Cantidad de registros por página. Valor por
-              defecto: <code>25</code>. Se puede personalizar el tamaño de la pagina. Valor mínimo: <code>25</code> y máximo: <code>50</code>.
+              <strong>size</strong> — {t("tabCharacters.parameter-size")}
             </li>
             <li>
-              <strong>search</strong> — Obtiene el filtrado de personajes cuyo nombre contenga el texto
-              especificado en la búsqueda parcial, sin distinción de mayúsculas/minúsculas.
+              <strong>search</strong> — {t("tabCharacters.parameter-search")}
             </li>
           </ul>
 
           <p className="mt-3 text-black text-sm text-justify">
-            Los tres parámetros son opcionales y pueden combinarse de forma libre. Solo
-            basta incluir <strong>uno</strong> para activar la paginación. Si no se
-            especifica ninguno, se devuelve la lista completa de personajes.
+            {t("tabCharacters.issue-request")}
           </p>
 
           <p className="mt-3 text-red-200 text-sm italic text-justify">
-            Nota: si se utiliza el parámetro <code>search</code> y el número de
-            resultados es <strong>menor a 25</strong>, la respuesta{" "}
-            <strong>paginada</strong> devolverá valores null en los campos previousPage y nextPage.
-            Indicando que no hay más páginas disponibles para navegar.
+            {t("tabCharacters.parameter-note")}
           </p>
         </div>
 
@@ -115,11 +106,10 @@ export default function TabCharacters() {
       {/* SECCIÓN 3 - CONSULTA INDIVIDUAL */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta individual:
+          {t("tabCharacters.individual-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite obtener la información de un personaje específico mediante su{" "}
-          <strong>ID</strong> o <strong>slug</strong>.
+          {t("tabCharacters.individual-request-description")}
         </p>
 
         {/* Badge + Endpoint + Botones */}
@@ -169,11 +159,10 @@ export default function TabCharacters() {
       {/* SECCIÓN 4 - CONSULTA CON PAGINACIÓN */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta con paginación:
+          {t("tabCharacters.pagination-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Ejemplo de uso combinando los parámetros <code>page</code>,{" "}
-          <code>size</code> y <code>search</code> para filtrar resultados.
+          {t("tabCharacters.pagination-request-description")}
         </p>
 
         {/* Badge + Endpoint + Botones */}
@@ -228,7 +217,7 @@ export default function TabCharacters() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Users className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Personajes más populares</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabCharacters.response-example-title")}</h3>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

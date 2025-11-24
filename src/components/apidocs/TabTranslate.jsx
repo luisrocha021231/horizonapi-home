@@ -1,7 +1,9 @@
 import { Brain, Copy, ExternalLink } from "lucide-react";
 import translatedExamples from "../../data/sampleTranslation.json";
+import { useTranslation } from "react-i18next";
 
 export default function TabTranslation() {
+  const { t } = useTranslation();
   const baseEndpoint = "https://horizonapi.luisrocharo.com/api";
 
   const examples = translatedExamples.examples; // Importar ejemplos desde el JSON
@@ -17,46 +19,37 @@ export default function TabTranslation() {
         <div className="flex items-center gap-2 mb-3">
           <Brain className="text-[#1244c3] drop-shadow-md" />
           <h3 className="text-xl font-semibold drop-shadow-sm">
-            Traducción con IA
+            {t("tabTranslation.title")}
           </h3>
         </div>
 
         <p className="text-gray-200/90 mb-6 text-sm sm:text-base leading-relaxed">
-          Los datos fueron recuperados y almacenados a partir de la información del sitio Horizon Wiki en su idioma original, por lo tanto todas las respuestas se generan en inglés. 
-          El módulo de <strong className="text-white">traducción automática</strong> se implemento para facilitar respuestas en otros idiomas de forma nativa, sin embargo 
-          está actualmente en <span className="text-orange-400 font-semibold">fase de desarrollo y pruebas</span>.  
-          Esta opción permite traducir cualquier endpoint de la API de Horizon utilizando
-          <strong className="text-white"> GPT-5</strong>.
+          {t("tabTranslation.description")}
         </p>
 
         <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-5 py-3 text-gray-300 text-sm shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
-          ⚙️ <strong>Modo experimental:</strong> las respuestas traducidas se generan dinámicamente.
-          Si la respuesta tarda más de <strong>30 segundos</strong>, la petición se cancela
-          automáticamente para evitar bloqueos del servidor.
+          ⚙️ <strong>{t("tabTranslation.experimental-title")}</strong> {t("tabTranslation.experimental-note")}
         </div>
       </section>
 
       {/* SECCIÓN 2 - DESCRIPCIÓN GENERAL */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Parámetro <code>lang</code>
+          {t("tabTranslation.parameter-lang-title")}
         </h4>
 
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Para obtener resultados traducidos, añade el parámetro <code>?lang=</code> 
-          al final de cualquier endpoint, indicando el idioma deseado (por ejemplo: 
-          <code>es</code>, <code>ru</code>, <code>jp</code>, <code>fr</code>, etc.).
+          {t("tabTranslation.parameter-lang-description")}
         </p>
 
         <p className="text-gray-300 text-sm sm:text-base mb-4">
-          Ejemplo general: <code>/api/areas?lang=es</code> devolverá la información traducida
-          al español. Este parámetro se aplica a <strong>todos los endpoints</strong> disponibles.
+          {t("tabTranslation.general-example-description")}
         </p>
       </section>
 
       {/* SECCIÓN 3 - EJEMPLOS DE USO */}
       <section>
-        <h4 className="font-semibold text-gray-100 mb-2">Ejemplos de endpoints traducidos:</h4>
+        <h4 className="font-semibold text-gray-100 mb-2">{t("tabTranslation.example-title")}</h4>
 
         {/* Ejemplo 1 */}
         <div className="flex items-center gap-2 mb-3">
@@ -170,11 +163,11 @@ export default function TabTranslation() {
       {/* SECCIÓN 4 - EJEMPLO DE RESPUESTA */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Ejemplos de respuestas traducidas:
+          {t("tabTranslation.example-2-title")}
         </h4>
 
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          A continuación se muestran ejemplos de respuestas traducidas generadas por el modelo <strong>GPT-5</strong>.
+          {t("tabTranslation.example-2-description")}
         </p>
 
         {/* 🔹 NUEVA SECCIÓN: RENDERIZAR EJEMPLOS DEL JSON */}
@@ -205,8 +198,7 @@ export default function TabTranslation() {
       {/* SECCIÓN 5 - ADVERTENCIA */}
       <section>
         <div className="bg-red-500/10 border border-red-400/30 backdrop-blur-md rounded-xl p-4 text-sm text-red-300 shadow-inner">
-          ⚠️ Esta opción de traducción aún se encuentra en desarrollo.  
-          Los resultados pueden variar dependiendo de la complejidad de la solicitud y del idioma solicitado.
+          {t("tabTranslation.warning-note")}
         </div>
       </section>
     </div>

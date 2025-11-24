@@ -63,5 +63,95 @@
         "example-1-description": "Get individual character:",
         "example-2-description": "Get individual machine:",
         "example-3-description": "Get individual cauldron:"
+    },
+    "tabCharacters": {
+        "title": "Characters",
+        "description": "Access detailed information about all characters in the Horizon universe, including their stories, affiliations, and game appearances.",
+        "main-endpoint": "Main Endpoint",
+        "main-endpoint-description": "Returns the complete list of characters registered in the API. Accepts 3 optional parameters (page, size, and search).",
+        "available-parameters": "Available Parameters",
+        "parameter-page": "Page number. Default value: 0.",
+        "parameter-size": "Number of records per page. Default value: 25. The page size can be customized. Minimum value: 25 and maximum value: 50.",
+        "parameter-search": "Filters characters whose names contain the specified text in a case-insensitive partial search.",
+        "issue-request": "All three parameters are optional and can be combined freely. Including just one activates pagination. If none are specified, the complete list of characters is returned.",
+        "parameter-note" : "Note: if the search parameter is used and the number of results is less than 25, the paginated response will return null values in the previousPage and nextPage fields, indicating that there are no more pages available to navigate.",
+        "individual-request-title" : "Individual Character Query:",
+        "individual-request-description" : "Get the full details of a specific character using their ID.",
+        "pagination-request-title" : "Example of a paginated query:",
+        "pagination-request-description" : "Example of using the page, size, and search parameters together to filter results.",
+        "response-example-title" : "Most Popular Characters"
+    },
+    "tabMachines" : {
+        "title": "Machines",
+        "description": "Query machines from the Horizon universe: name, class, size, origin, and in which games they appear.",
+        "main-endpoint": "Main Endpoint",
+        "main-endpoint-description": "Returns the complete list of machines available in the API. Accepts 3 optional parameters: page, size, and search.",
+        "available-parameters": "Available Parameters",
+        "parameter-page": "Page number. Default value: 0.",
+        "parameter-size": "Number of records per page. Default value: 25. The page size can be customized. Minimum value: 25 and maximum value: 50.",
+        "parameter-search": "Filters characters whose names contain the specified text in a case-insensitive partial search.",
+        "issue-request": "All three parameters are optional and can be combined freely. Including just one activates pagination. If none are specified, the complete list of characters is returned.",
+        "parameter-note" : "Note: if the search parameter is used and the number of results is less than 25, the paginated response will return null values in the previousPage and nextPage fields, indicating that there are no more pages available to navigate.",
+        "individual-request-title" : "Individual Machine Query:",
+        "individual-request-description" : "Get the full details of a specific machine using its ID.",
+        "pagination-request-title" : "Example of a paginated query:",
+        "pagination-request-description" : "Example of using the page, size, and search parameters together to filter results.",
+        "response-example-title": "Most Popular Machines"
+    },
+    "tabRegions" : {
+        "title": "Regions",
+        "description": "Discover the regions of the Horizon universe: areas where the main events take place, with their setting, biomes, and associated areas.",
+        "main-endpoint": "Main Endpoint",
+        "main-endpoint-description": "Returns the complete list of regions registered in the API. This endpoint does not have pagination.",
+        "individual-request-title" : "Individual Region Query:",
+        "individual-request-description" : "Allows you to obtain the data of a specific region by its ID.",
+        "search-request-title" : "Example of a search query:",
+        "search-request-description" : "Allows you to search for regions using the search parameter, which filters by partial matches in the name (case-insensitive).",
+        "response-example-title": "Most Representative Regions"
+
+    },
+    "tabAreas" : {
+        "title": "Areas",
+        "description": "Explore areas present in the Horizon universe: regions, geographic zones, and locations related to factions, characters, or machines.",
+        "main-endpoint": "Main Endpoint",
+        "main-endpoint-description": "Returns the complete list of areas registered in the API. This endpoint does not have pagination.",
+        "individual-request-title" : "Individual Area Query:",
+        "individual-request-description" : "Allows you to obtain the complete information of a specific area by its ID.",
+        "search-request-title" : "Example of a search query:",
+        "search-request-description" : "Allows you to search for areas using the search parameter, which filters by partial matches in the name (case-insensitive).",
+        "response-example-title": "Most Representative Areas"
+    },
+    "tabCauldrons": {
+        "title": "Cauldrons",
+        "description": "Discover the cauldrons of the Horizon world: ancient underground facilities where machines were manufactured. Each cauldron presents different levels of difficulty and types of machines that can be overridden.",
+        "main-endpoint": "Main Endpoint",
+        "main-endpoint-description": "Returns the complete list of cauldrons registered in the API. This endpoint does not have pagination.",
+        "individual-request-title" : "Individual Query:",
+        "individual-request-description" : "Allows you to obtain detailed information about a specific cauldron using its ID.",
+        "search-request-title" : "Example of a search query:",
+        "search-request-description" : "Allows you to search for cauldrons using the search parameter, which filters by partial matches in the name (case-insensitive).",
+        "response-example-title": "Most Prominent Cauldrons"
+    },
+    "tabTranslation": {
+        "title": "AI Translation",
+        "description": "The data was retrieved and stored from the Horizon Wiki site in its original language, so all responses are generated in English. The automatic translation module was implemented to facilitate responses in other languages natively, however it is currently in the development and testing phase. This option allows you to translate any endpoint of the Horizon API using GPT-5.",
+        "experimental-title": "Experimental Mode:",
+        "experimental-note": "If the response takes longer than 30 seconds, the request is automatically canceled to prevent server blocks.",
+        "parameter-lang-title": "Lang Parameter",
+        "parameter-lang-description": "To obtain translated results, add the ?lang= parameter at the end of any endpoint, indicating the desired language (e.g., es, ru, jp, fr, etc.).",
+        "general-example-description": "General example: /api/areas?lang=es will return information translated into Spanish. This parameter applies to all available endpoints.",
+        "example-title": "Examples of translated endpoints:",
+        "example-2-title": "Examples of translated responses:",
+        "example-2-description": "Below are examples of translated responses generated by the GPT-5 model.",
+        "warning-note": "⚠️ This translation option is still under development. Results may vary depending on the complexity of the request and the requested language."
+    },
+    "footer": {
+        "docs-title": "Documentation",
+        "API-title": "API Endpoint",
+        "example-title": "Example",
+        "about-content-1": "Built by",
+        "about-content-2": ". Inspired by open APIs and modern documentation.",
+        "about-content-3": "This project uses data from",
+        "about-content-4": ". Data and content under license"
     }
 }

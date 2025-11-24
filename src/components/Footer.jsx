@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer
       id="about"
@@ -23,21 +26,21 @@ export default function Footer() {
             href="#docs"
             className="hover:text-orange-400 transition-colors duration-300"
           >
-            Documentación
+            {t("footer.docs-title")}
           </a>
           <a
             href="https://horizonapi.luisrocharo.com/api"
             target="_blank"
             className="hover:text-orange-400 transition-colors duration-300"
           >
-            API Endpoint
+            {t("footer.API-title")}
           </a>
           <a
             href="https://horizonapi.luisrocharo.com/api/characters/1"
             target="_blank"
             className="hover:text-orange-400 transition-colors duration-300"
           >
-            Ejemplo
+            {t("footer.example-title")}
           </a>
           {/* <a
             href="https://status.luisrocharo.com"
@@ -50,7 +53,7 @@ export default function Footer() {
 
         {/* Créditos */}
         <p className="text-xs text-gray-300">
-          Construido por{" "}
+          {t("footer.about-content-1")}{" "}
           <a
             href="https://luisrocharo.com"
             target="_blank"
@@ -58,11 +61,11 @@ export default function Footer() {
           >
             Luis Rocha
           </a>
-          . Inspirado en APIs abiertas y documentaciones modernas.
+          {t("footer.about-content-2")}
         </p>
 
         <p className="text-xs text-gray-400 mt-1">
-          Este proyecto utiliza datos de{" "}
+          {t("footer.about-content-3")}{" "}
           <a
             href="https://horizon.fandom.com/wiki/Horizon_Wiki"
             target="_blank"
@@ -70,7 +73,7 @@ export default function Footer() {
           >
             Horizon Wiki
           </a>
-          . Datos y contenido bajo licencia{" "}
+          {t("footer.about-content-4")}{" "}
           <a
             href="https://creativecommons.org/licenses/by-sa/4.0/"
             target="_blank"

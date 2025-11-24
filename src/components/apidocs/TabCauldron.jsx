@@ -3,8 +3,10 @@ import { Factory, Copy, ExternalLink } from "lucide-react";
 import cauldronsData from "../../data/cauldrons.json";
 import sampleCauldron from "../../data/sampleCauldron.json";
 import sampleSearchCauldron from "../../data/sampleSearchCauldron.json";
+import { useTranslation } from "react-i18next";
 
 export default function TabCauldrons() {
+  const { t } = useTranslation();
   const endpoint = "https://horizonapi.luisrocharo.com/api/cauldrons";
   const [cauldrons, setCauldrons] = useState([]);
 
@@ -28,23 +30,19 @@ export default function TabCauldrons() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Factory className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Calderos</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabCauldrons.title")}</h3>
         </div>
 
         <p className="text-gray-200/90 mb-6 text-sm sm:text-base leading-relaxed">
-          Descubre los <strong className="text-white">calderos</strong> del mundo de Horizon: 
-          instalaciones subterráneas antiguas donde se fabricaban las máquinas.  
-          Cada caldero presenta diferentes niveles de dificultad y tipos de máquinas 
-          que pueden ser dominadas.
+          {t("tabCauldrons.description")}
         </p>
       </section>
 
       {/* SECCIÓN 2 - ENDPOINT PRINCIPAL */}
       <section>
-        <h4 className="font-semibold text-gray-100 mb-2">Endpoint principal:</h4>
+        <h4 className="font-semibold text-gray-100 mb-2">{t("tabCauldrons.main-endpoint")}</h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Devuelve la lista completa de calderos registrados en la API.  
-          Este endpoint no posee paginación.
+          {t("tabCauldrons.main-endpoint-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -77,10 +75,10 @@ export default function TabCauldrons() {
       {/* SECCIÓN 3 - CONSULTA POR ID */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta individual:
+          {t("tabCauldrons.individual-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite obtener la información detallada de un caldero específico mediante su <strong>ID</strong>.
+          {t("tabCauldrons.individual-request-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -127,12 +125,10 @@ export default function TabCauldrons() {
       {/* SECCIÓN 4 - CONSULTA POR SEARCH */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta mediante búsqueda:
+          {t("tabCauldrons.search-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite realizar búsquedas de calderos utilizando el parámetro{" "}
-          <code>search</code>, que filtra por coincidencias parciales en el
-          nombre (sin distinción de mayúsculas/minúsculas).
+          {t("tabCauldrons.search-request-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -180,7 +176,7 @@ export default function TabCauldrons() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Factory className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Calderos más destacados</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabCauldrons.response-example-title")}</h3>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

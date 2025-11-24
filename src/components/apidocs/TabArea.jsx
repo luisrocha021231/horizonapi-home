@@ -3,8 +3,10 @@ import { MapPin, Copy, ExternalLink } from "lucide-react";
 import areasData from "../../data/areas.json";
 import sampleArea from "../../data/sampleArea.json";
 import sampleSearchArea from "../../data/sampleSearchArea.json";
+import { useTranslation } from "react-i18next";
 
 export default function TabAreas() {
+  const { t } = useTranslation();
   const endpoint = "https://horizonapi.luisrocharo.com/api/areas";
   const [areas, setAreas] = useState([]);
 
@@ -28,23 +30,19 @@ export default function TabAreas() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <MapPin className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Áreas</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabAreas.title")}</h3>
         </div>
 
         <p className="text-gray-200/90 mb-6 text-sm sm:text-base leading-relaxed">
-          Explora áreas presentes en el universo{" "}
-          <strong className="text-white">Horizon</strong>: regiones, zonas
-          geográficas y ubicaciones relacionadas con facciones, personajes o
-          máquinas.
+          {t("tabAreas.description")}
         </p>
       </section>
 
       {/* SECCIÓN 2 - ENDPOINT PRINCIPAL */}
       <section>
-        <h4 className="font-semibold text-gray-100 mb-2">Endpoint principal:</h4>
+        <h4 className="font-semibold text-gray-100 mb-2">{t("tabAreas.main-endpoint")}</h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Devuelve el listado completo de áreas registradas en la API.
-          Este endpoint no posee paginación.
+          {t("tabAreas.main-endpoint-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -79,10 +77,10 @@ export default function TabAreas() {
       {/* SECCIÓN 3 - CONSULTA POR ID */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta individual:
+          {t("tabAreas.individual-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite obtener la información completa de un área específica mediante su <strong>ID</strong>.
+          {t("tabAreas.individual-request-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -131,12 +129,10 @@ export default function TabAreas() {
       {/* SECCIÓN 4 - CONSULTA POR SEARCH */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta mediante búsqueda:
+          {t("tabAreas.search-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite realizar búsquedas de áreas utilizando el parámetro{" "}
-          <code>search</code>, que filtra por coincidencias parciales en el
-          nombre del área (sin distinción de mayúsculas/minúsculas).
+          {t("tabAreas.search-request-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -185,7 +181,7 @@ export default function TabAreas() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <MapPin className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Áreas más destacadas</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabAreas.response-example-title")}</h3>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

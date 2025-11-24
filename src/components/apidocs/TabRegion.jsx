@@ -3,8 +3,10 @@ import { Globe, Copy, ExternalLink } from "lucide-react";
 import regionsData from "../../data/regions.json";
 import sampleRegion from "../../data/sampleRegion.json";
 import sampleSearchRegion from "../../data/sampleSearchRegion.json";
+import { useTranslation } from "react-i18next";
 
 export default function TabRegions() {
+  const { t } = useTranslation();
   const endpoint = "https://horizonapi.luisrocharo.com/api/regions";
   const [regions, setRegions] = useState([]);
 
@@ -28,22 +30,19 @@ export default function TabRegions() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Globe className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Regiones</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabRegions.title")}</h3>
         </div>
 
         <p className="text-gray-200/90 mb-6 text-sm sm:text-base leading-relaxed">
-          Descubre las <strong className="text-white">regiones</strong> del
-          universo de Horizon: zonas donde se desarrollan los eventos principales,
-          con su ambientación, biomas y áreas asociadas.
+          {t("tabRegions.description")}
         </p>
       </section>
 
       {/* SECCIÓN 2 - ENDPOINT PRINCIPAL */}
       <section>
-        <h4 className="font-semibold text-gray-100 mb-2">Endpoint principal:</h4>
+        <h4 className="font-semibold text-gray-100 mb-2">{t("tabRegions.main-endpoint")}</h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Devuelve la lista completa de regiones registradas en la API.  
-          Este endpoint no posee paginación.
+          {t("tabRegions.main-endpoint-description")}
         </p>
 
         {/* Badge + Endpoint + Botones */}
@@ -79,10 +78,10 @@ export default function TabRegions() {
       {/* SECCIÓN 3 - CONSULTA POR ID */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta individual:
+          {t("tabRegions.individual-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite obtener los datos de una región específica mediante su <strong>ID</strong>.
+          {t("tabRegions.individual-request-description")}
         </p>
 
         {/* Badge + Endpoint + Botones */}
@@ -132,12 +131,10 @@ export default function TabRegions() {
       {/* SECCIÓN 4 - CONSULTA POR SEARCH */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta mediante búsqueda:
+          {t("tabRegions.search-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite realizar búsquedas de regiones utilizando el parámetro{" "}
-          <code>search</code>, que filtra por coincidencias parciales en el
-          nombre (sin distinción de mayúsculas/minúsculas).
+          {t("tabRegions.search-request-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -187,7 +184,7 @@ export default function TabRegions() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Globe className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Regiones más representativas</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabRegions.response-example-title")}</h3>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

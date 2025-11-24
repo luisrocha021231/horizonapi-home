@@ -3,8 +3,10 @@ import { Cog, Copy, ExternalLink } from "lucide-react";
 import machinesData from "../../data/machines.json";
 import sampleMachine from "../../data/sampleMachine.json";
 import samplePagination from "../../data/sampleMachinePagination.json";
+import { useTranslation } from "react-i18next";
 
 export default function TabMachine() {
+  const { t } = useTranslation();
   const endpoint = "https://horizonapi.luisrocharo.com/api/machines";
   const [machines, setMachines] = useState([]);
 
@@ -28,20 +30,19 @@ export default function TabMachine() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Cog className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Máquinas</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabMachines.title")}</h3>
         </div>
 
         <p className="text-gray-200/90 mb-6 text-sm sm:text-base leading-relaxed">
-          Consulta las máquinas del universo <strong className="text-white">Horizon</strong>: nombre, clase, tamaño, origen, y en qué juegos aparecen.
+          {t("tabMachines.description")}
         </p>
       </section>
 
       {/* SECCIÓN 2 - ENDPOINT PRINCIPAL */}
       <section>
-        <h4 className="font-semibold text-gray-100 mb-2">Endpoint principal:</h4>
+        <h4 className="font-semibold text-gray-100 mb-2">{t("tabMachines.main-endpoint")}</h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Devuelve la lista completa de máquinas disponibles en la API.  
-          Acepta 3 parámetros opcionales: <code>page</code>, <code>size</code> y <code>search</code>.
+          {t("tabMachines.main-endpoint-description")}
         </p>
 
         {/* Badge + Endpoint + Botones */}
@@ -74,29 +75,27 @@ export default function TabMachine() {
         {/* Documentación de Query Params */}
         <div className="bg-white/5 border border-white/20 rounded-2xl p-5 mt-4 backdrop-blur-lg shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
           <h5 className="font-semibold text-white mb-2 text-lg">
-            Parámetros disponibles:
+            {t("tabMachines.available-parameters")}
           </h5>
 
           <ul className="text-sm text-gray-300 leading-relaxed list-disc list-inside space-y-1 text-justify pl-5">
             <li>
-              <strong>page</strong> — Número de página. Valor por defecto: <code>0</code>.
+              <strong>page</strong> — {t("tabMachines.parameter-page")}
             </li>
             <li>
-              <strong>size</strong> — Cantidad de registros por página. Valor por defecto: <code>25</code>.  
-              Se puede personalizar entre <code>25</code> y <code>50</code>.
+              <strong>size</strong> — {t("tabMachines.parameter-size")}
             </li>
             <li>
-              <strong>search</strong> — Filtra máquinas cuyo nombre contenga el texto especificado, sin distinción de mayúsculas o minúsculas.
+              <strong>search</strong> — {t("tabMachines.parameter-search")}
             </li>
           </ul>
 
           <p className="mt-3 text-black text-sm text-justify">
-            Los tres parámetros son opcionales y pueden combinarse de forma libre. Solo se necesita <strong>uno</strong> para activar la paginación.  
-            Si no se especifica ninguno, se devuelve la lista completa de máquinas.
+            {t("tabMachines.issue-request")}
           </p>
 
           <p className="mt-3 text-red-200 text-sm italic text-justify">
-            Nota: si se utiliza el parámetro <code>search</code> y el número de resultados es <strong>menor a 25</strong>, la respuesta paginada devolverá valores <code>null</code> en los campos <code>previousPage</code> y <code>nextPage</code>, indicando que no hay más páginas disponibles.
+            {t("tabMachines.parameter-note")}
           </p>
         </div>
       </section>
@@ -104,10 +103,10 @@ export default function TabMachine() {
       {/* SECCIÓN 3 - CONSULTA INDIVIDUAL */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta individual:
+          {t("tabMachines.individual-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Permite obtener la información de una máquina específica mediante su <strong>ID</strong>.
+          {t("tabMachines.individual-request-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -156,10 +155,10 @@ export default function TabMachine() {
       {/* SECCIÓN 4 - CONSULTA CON PAGINACIÓN */}
       <section>
         <h4 className="font-semibold text-gray-100 mt-8 mb-2">
-          Consulta con paginación:
+          {t("tabMachines.pagination-request-title")}
         </h4>
         <p className="text-gray-300 mb-3 text-sm sm:text-base">
-          Ejemplo de uso combinando los parámetros <code>page</code>, <code>size</code> y <code>search</code> para filtrar resultados.
+          {t("tabMachines.pagination-request-description")}
         </p>
 
         <div className="flex items-center gap-2 mb-3">
@@ -213,7 +212,7 @@ export default function TabMachine() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <Cog className="text-[#1244c3] drop-shadow-md" />
-          <h3 className="text-xl font-semibold drop-shadow-sm">Máquinas más populares</h3>
+          <h3 className="text-xl font-semibold drop-shadow-sm">{t("tabMachines.response-example-title")}</h3>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
