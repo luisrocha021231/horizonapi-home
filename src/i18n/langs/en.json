@@ -19,14 +19,9 @@
                 "description-endpoint" : "Explore each type of machine with data on its class, size, origin, and combat behavior."
             },
             {
-                "title-endpoint" : "Regions",
-                "subtitle-endpoint" : "Discover regions of the Horizon world.",
-                "description-endpoint" : "Check the location, environment, and areas belonging to each region."
-            },
-            {
-                "title-endpoint" : "Areas",
-                "subtitle-endpoint" : "Explorable zones and their connections.",
-                "description-endpoint" : "Get information about some areas and their relationship with regions or factions."
+                "title-endpoint": "Regions and Areas",
+                "subtitle-endpoint": "Discover the regions of the Horizon world and the areas that compose them.",
+                "description-endpoint": "Check the location, environment, and structures of each region, as well as the explorable zones that belong to or connect with them."
             },
             {
                 "title-endpoint" : "Cauldrons",
@@ -37,6 +32,12 @@
                 "title-endpoint" : "AI Translation (Beta)",
                 "subtitle-endpoint" : "Automatic response translation with AI.",
                 "description-endpoint" : "Translate API responses into multiple languages with built-in artificial intelligence."
+            },
+            {
+                "title-endpoint" : "GraphQL Support",
+                "subtitle-endpoint" : "Flexible querying with GraphQL.",
+                "description-endpoint" : "Access API data using GraphQL queries to retrieve only the information you need.",
+                "tag": "NEW"
             }
         ]
     },
@@ -50,7 +51,8 @@
             "Regions",
             "Areas",
             "Cauldrons",
-            "AI Translation (Beta)"
+            "AI Translation (Beta)",
+            "GraphQL Support (New)"
         ]
     },
     "tabHome": {

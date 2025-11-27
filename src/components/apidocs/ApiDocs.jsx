@@ -6,6 +6,7 @@ import TabRegiones from "./TabRegion";
 import TabAreas from "./TabArea";
 import TabCalderos from "./TabCauldron";
 import TabTraduccion from "./TabTranslate";
+import TabGraphql from "./TabGraphql";
 import { useTranslation } from "react-i18next";
 
 export default function ApiDocs() {
@@ -20,6 +21,7 @@ export default function ApiDocs() {
     { id: "areas", label: t("apidocs.options.4") },
     { id: "cauldrons", label: t("apidocs.options.5") },
     { id: "translation", label: t("apidocs.options.6") },
+    { id: "graphql", label: t("apidocs.options.7") },
   ];
 
   const renderContent = () => {
@@ -31,6 +33,7 @@ export default function ApiDocs() {
       case "areas": return <TabAreas />;
       case "cauldrons": return <TabCalderos />;
       case "translation": return <TabTraduccion />;
+      case "graphql": return <TabGraphql />;
       default: return null;
     }
   };

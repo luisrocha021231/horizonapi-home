@@ -19,14 +19,9 @@
                 "description-endpoint" : "Explora cada tipo de máquina con datos sobre su clase, tamaño, origen y comportamiento en combate."
             },
             {
-                "title-endpoint" : "Regiones",
-                "subtitle-endpoint" : "Descubre regiones del mundo Horizon.",
-                "description-endpoint" : "Consulta la ubicación, entorno y las áreas que pertenecen a cada región."
-            },
-            {
-                "title-endpoint" : "Áreas",
-                "subtitle-endpoint" : "Zonas explorables y sus conexiones.",
-                "description-endpoint" : "Obtén información sobre algunas áreas y su relación con regiones o facciones."
+                "title-endpoint": "Regiones y Áreas",
+                "subtitle-endpoint": "Descubre las regiones del mundo Horizon y las áreas que las componen.",
+                "description-endpoint": "Consulta la ubicación, entorno y estructuras de cada región, así como las zonas explorables que pertenecen o se conectan con ellas."
             },
             {
                 "title-endpoint" : "Calderos",
@@ -37,6 +32,12 @@
                 "title-endpoint" : "Traducción IA (Beta)",
                 "subtitle-endpoint" : "Traducción automática de respuestas con IA.",
                 "description-endpoint" : "Traduce las respuestas de la API a varios idiomas con inteligencia artificial integrada."
+            },
+            {
+                "title-endpoint" : "Soporte GraphQL",
+                "subtitle-endpoint" : "Consulta flexible con GraphQL.",
+                "description-endpoint" : "Accede a los datos de la API utilizando consultas GraphQL para obtener solo la información que necesitas.",
+                "tag": "NUEVO"
             }
         ]
     },
@@ -50,7 +51,8 @@
             "Regiones",
             "Áreas",
             "Calderos",
-            "Traducción IA (Beta)"
+            "Traducción IA (Beta)",
+            "Soporte GraphQL (Nuevo)"
         ]
     },
     "tabHome": {

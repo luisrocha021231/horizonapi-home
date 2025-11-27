@@ -4,7 +4,7 @@ export default function Layout({ children }) {
     <div
       className="relative min-h-screen text-white overflow-hidden"
       style={{
-        backgroundImage: "url('/horizon.jpg')",
+        backgroundImage: "url('/horizon.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",

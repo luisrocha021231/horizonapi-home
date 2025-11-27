@@ -1,4 +1,4 @@
-import { Users, Bot, Map, Mountain, Factory, Brain } from "lucide-react";
+import { Users, Bot, Map, Factory, Brain, GitGraph } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function ApiOverview() {
@@ -25,22 +25,23 @@ export default function ApiOverview() {
       description: t("overview.endpoints.2.description-endpoint"),
     },
     {
-      icon: <Mountain size={32} />,
+      icon: <Factory size={32} />,
       title: t("overview.endpoints.3.title-endpoint"),
       subtitle: t("overview.endpoints.3.subtitle-endpoint"),
       description: t("overview.endpoints.3.description-endpoint"),
     },
     {
-      icon: <Factory size={32} />,
+      icon: <Brain size={32} color="#69b16c" />,
       title: t("overview.endpoints.4.title-endpoint"),
       subtitle: t("overview.endpoints.4.subtitle-endpoint"),
       description: t("overview.endpoints.4.description-endpoint"),
     },
     {
-      icon: <Brain size={32} />,
+      icon: <GitGraph size={32} color="#f6009b" />,
       title: t("overview.endpoints.5.title-endpoint"),
       subtitle: t("overview.endpoints.5.subtitle-endpoint"),
       description: t("overview.endpoints.5.description-endpoint"),
+      isNew: true
     },
   ];
 
@@ -84,6 +85,23 @@ export default function ApiOverview() {
                 cursor-default
               "
             >
+              {ep.isNew && (
+                <span
+                  className="
+                    absolute top-3 right-3
+                    px-3 py-1
+                    text-xs font-semibold
+                    rounded-full
+                    bg-white/20
+                    backdrop-blur-md
+                    border border-white/30
+                    shadow-[0_0_10px_rgba(255,255,255,0.3)]
+                    text-white
+                  "
+                >
+                  {t("overview.endpoints.5.tag")}
+                </span>
+              )}
               <div className="text-[#1244c3] mb-3 drop-shadow-sm">
                 {ep.icon}
               </div>

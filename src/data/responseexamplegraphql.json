@@ -1,0 +1,110 @@
+{
+  "responses": [
+    {
+      "data": {
+        "character": {
+          "id": "4",
+          "slug": "aloy",
+          "name": "Aloy",
+          "culture": "Nora",
+          "gender": "Female",
+          "profession": "Machine hunter",
+          "status": "Alive",
+          "eyes_color": "Green",
+          "hair_color": "Red",
+          "birth_date": "April 4th, 3021",
+          "death_date": "No data"
+        }
+      }
+    },
+    {
+      "data": {
+        "machines": {
+          "items": [
+            {
+              "id": "1",
+              "slug": "grazer",
+              "name": "Grazer",
+              "path_image": "https://cdn.horizonapi.luisrocharo.com/machines/grazer.webp",
+              "size": "Small",
+              "origin": "GAIA",
+              "machine_class": "Acquisition",
+              "strength": ["Acid (HFW)"],
+              "weakness": ["Shock (HFW)"]
+            },
+            {
+              "id": "2",
+              "slug": "burrower",
+              "name": "Burrower",
+              "path_image": "https://cdn.horizonapi.luisrocharo.com/machines/burrower.webp",
+              "size": "No data",
+              "origin": "GAIA",
+              "machine_class": "Reconnaissance",
+              "strength": ["No data"],
+              "weakness": ["Fire"]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "data": {
+        "areas": {
+          "items": [
+            {
+              "id": "2",
+              "slug": "clan-lands",
+              "name": "Clan Lands",
+              "description": "The Clan Lands, also known as the Tenakth Lands, is the territory belonging to the Tenakth tribe within the Forbidden West. The Clan Lands make up the majority of the Forbidden West.",
+              "type": "Tribal Territory",
+              "faction": "Tenakth",
+              "image_path": "https://cdn.horizonapi.luisrocharo.com/area/clan-lands.webp",
+              "regions": ["Rustwash"],
+              "appears_in": ["Horizon Forbidden West"]
+            },
+            {
+              "id": "4",
+              "slug": "plainsong",
+              "name": "Plainsong",
+              "description": "Plainsong is the home territory of the Utaru tribe.",
+              "type": "Tribal Territory",
+              "faction": "Utaru",
+              "image_path": "https://cdn.horizonapi.luisrocharo.com/area/plainsong.webp",
+              "regions": ["Sun-Steps"],
+              "appears_in": ["Horizon Forbidden West"]
+            },
+            {
+              "id": "5",
+              "slug": "sacred-lands",
+              "name": "Sacred Lands",
+              "description": "The Sacred Lands, also known as Nora Territory or the Savage East, is the territory belonging to the people of the Nora tribe.",
+              "type": "Tribal Territory",
+              "faction": "Nora",
+              "image_path": "https://cdn.horizonapi.luisrocharo.com/area/sacred-lands.webp",
+              "regions": ["The Cut"],
+              "appears_in": [
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+              ]
+            },
+            {
+              "id": "7",
+              "slug": "the-claim",
+              "name": "The Claim",
+              "description": "The Claim is a mentioned-only location in Horizon Zero Dawn and Horizon Forbidden West. It is the tribal territory of the Oseram.",
+              "type": "Tribal Territory",
+              "faction": "Oseram",
+              "image_path": "https://cdn.horizonapi.luisrocharo.com/area/the-claim.webp",
+              "regions": ["The Jewel"],
+              "appears_in": [
+                "Horizon Forbidden West",
+                "Horizon Zero Dawn",
+                "Horizon Zero Dawn Remastered"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

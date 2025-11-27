@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
-            src="/horizon-logo.png" // 👈 cambia por la ruta de tu PNG
+            src="/horizon-logo.webp" // 👈 cambia por la ruta de tu PNG
             alt="Horizon API Logo"
             className="h-8 md:h-10 w-auto drop-shadow-lg select-none"
           />
